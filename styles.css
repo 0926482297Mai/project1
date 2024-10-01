@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    animation: transitionIn 0.75s;
+} 
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: 'poppins',sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #08187200, #05399ad8); /* Initial gradient */
+    background-size: 400% 300%; /* ทำให้ภาพใหญ่เพื่อให้เคลื่อนไหว */
+    animation: gradient-animation 12s ease infinite; /* เรียกใช้ animation */
+    margin: 0;
+}
+    @keyframes gradient-animation {
+        0% {
+        background-position: 0% 70%;
+        }
+        50% {
+        background-position: 100% 30%;
+        }
+        100% {
+        background-position: 0% 70%;
+        }
+        
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.gate {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(72, 72, 72, 0.651);
+    transition: transform 0.3s ease;
+    width: 200px; /* กำหนดความกว้าง */
+    height: 310px; /* กำหนดความสูง */
+}
+.gate:hover {
+    transform: translateY(-10px);
+}
+.inputs, .output {
+    margin: 15px 0;
+}
+.inputs label, .output label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.output {
+    font-size: 1.5em;
+    color: #333;
+}
+.output span {
+    
+    font-weight: bold;
+    color: #007BFF;
+}
+.light {
+    margin-top: 30px;
+}
+.light img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+  
+}
+.button {
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #007BFF;
+}

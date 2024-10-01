@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gate" id="andGate">
+            <h1>AND Gate</h1>
+            <div class="inputs">
+                <label for="andInput1">Input 1:</label>
+                <input type="checkbox" id="andInput1">
+            </div>
+            <div class="inputs">
+                <label for="andInput2">Input 2:</label>
+                <input type="checkbox" id="andInput2">
+            </div>
+            <div class="output">
+                <label for="andOutput">Output:</label>
+                <span id="andOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="andLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+        <div class="gate" id="orGate">
+            <h1>OR Gate</h1>
+            <div class="inputs">
+                <label for="orInput1">Input 1:</label>
+                <input type="checkbox" id="orInput1">
+            </div>
+            <div class="inputs">
+                <label for="orInput2">Input 2:</label>
+                <input type="checkbox" id="orInput2">
+            </div>
+            <div class="output">
+                <label for="orOutput">Output:</label>
+                <span id="orOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="orLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+        <div class="gate" id="nandGate">
+            <h1>NAND Gate</h1>
+            <div class="inputs">
+                <label for="nandInput1">Input 1:</label>
+                <input type="checkbox" id="nandInput1">
+            </div>
+            <div class="inputs">
+                <label for="nandInput2">Input 2:</label>
+                <input type="checkbox" id="nandInput2">
+            </div>
+            <div class="output">
+                <label for="nandOutput">Output:</label>
+                <span id="nandOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="nandLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+        <div class="gate" id="norGate">
+            <h1>NOR Gate</h1>
+            <div class="inputs">
+                <label for="norInput1">Input 1:</label>
+                <input type="checkbox" id="norInput1">
+            </div>
+            <div class="inputs">
+                <label for="norInput2">Input 2:</label>
+                <input type="checkbox" id="norInput2">
+            </div>
+            <div class="output">
+                <label for="norOutput">Output:</label>
+                <span id="norOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="norLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+        <div class="gate" id="xorGate">
+            <h1>XOR Gate</h1>
+            <div class="inputs">
+                <label for="xorInput1">Input 1:</label>
+                <input type="checkbox" id="xorInput1">
+            </div>
+            <div class="inputs">
+                <label for="xorInput2">Input 2:</label>
+                <input type="checkbox" id="xorInput2">
+            </div>
+            <div class="output">
+                <label for="xorOutput">Output:</label>
+                <span id="xorOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="xorLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+        <div class="gate" id="xnorGate">
+            <h1>XNOR Gate</h1>
+            <div class="inputs">
+                <label for="xnorInput1">Input 1:</label>
+                <input type="checkbox" id="xnorInput1">
+            </div>
+            <div class="inputs">
+                <label for="xnorInput2">Input 2:</label>
+                <input type="checkbox" id="xnorInput2">
+            </div>
+            <div class="output">
+                <label for="xnorOutput">Output:</label>
+                <span id="xnorOutput">0</span>
+            </div>
+            <div class="light">
+                <img id="xnorLight" class="off" src="https://via.placeholder.com/200/FF0000/FFFFFF?text=OFF" alt="Light">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แทรกลิงค์ใน HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+  
+        .navbar {
+            width: 100%;
+            background-color: rgba(20, 40, 102, 0.373);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            padding: 10px 0;
+            transition: background-color 0.5s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.7); /* เปลี่ยนสีเมื่อเลื่อน */
+        }
+        .navbar a {
+            color: rgba(255, 255, 255, 0.9); /* สีเดียวกับพื้นหลัง navbar */
+            padding: 7px 17px; /* ปรับ padding ให้ลิงก์ชิดกันมากขึ้น */
+            font-size: 1.1em;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease; /* ทรานสิชั่น */
+            transform: scale(1);
+            margin: 0 20px; /* ระยะห่างระหว่างลิงก์ */
+        }
+        .navbar a:hover {
+            color: #131312; /* เปลี่ยนสีเมื่อ hover */
+            background-color: #f4f4f4; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+            border-radius: 5px;
+            transform: scale(1.2); /* ขยายขนาดเมื่อ hover */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="sec-1 show-animate" id="sec-1">
+        <h1 class="animate">Logic Gate Simulation</h1>
+        <p class="animate"><a href="file:///C:/Users/natta/Downloads/Logic%20gate%20Sim/index.html">Click here to start</a></p> <!-- แทรกลิงค์ในข้อความ -->
+    </section>
+
+    <section class="sec-2" id="sec-2">
+        <h1 class="animate">About</h1>
+        <p class="animate">about us in this</p>
+    </section>
+    
+    <section class="sec-3" id="sec-3">
+        <h1 class="animate">Services</h1>
+        <p class="animate">about us in this</p>
+    </section>
+    
+    <section class="sec-4" id="sec-4">
+        <h1>Contact<span class="showRight-animation" style="--i:1"></span></h1>
+        <p>about us in this<span class="showRight-animation"style="--i:3"></span></p>
+    </section>
+
+     <div class="navbar" id="navbar">
+         <a href="#sec-1">Home</a>
+         <a href="#sec-2">About</a>
+         <a href="#sec-3">Services</a>
+         <a href="#sec-4">Contact</a>
+    </div>  
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
